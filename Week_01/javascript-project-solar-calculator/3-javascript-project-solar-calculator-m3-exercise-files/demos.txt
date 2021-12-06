@@ -1,0 +1,62 @@
+<!-- JavaScript Stuff stuff -->
+
+var i = 1;
+while (i<=100) {
+	console.log(i);
+	i=i+1;
+} // end loop
+
+
+
+
+for (i=1; i<=100; i++) {
+	console.log(i);
+}
+
+
+
+var elementID = document.getElementById("state");
+console.log(elementID);
+console.log(elementID.length);
+console.log(elementID[3].text);
+console.log(elementID[3].value);
+
+console.log(elementID[i].selected);
+
+
+var x="";
+function display(element) {
+	var elementID = document.getElementsByName(element);
+	var i=0;
+	while (i<elementID.length) {
+		x+=elementID[i].checked + "<br>";
+		i++;
+	} // end for
+	document.getElementById("output").innerHTML = x;
+} //end function
+
+
+<!-- HTML stuff -->
+<h2>What is your home state?</h2>
+<select id="state">
+<option value="WY">Wyoming</option>
+<option value="UT">Utah</option>
+<option value="ID">Idaho</option>
+<option value="MT">Montana</option>
+</select>
+
+<h2>Your Home Style</h2>
+<select id="home">
+<option value="single">Single Family</option>
+<option value="apartment">Apartment or Condo</option>
+<option value="multi">Multi-Family</option>
+<option value="mobile">Mobile Home</option>
+</select>
+
+<h2>Lighting</h2>
+<label><input type="checkbox" name="bulb" value="Incandescent">Incandescent</label>
+<label><input type="checkbox" name="bulb" value="LED">Light Emmitting Diod</label>
+<label><input type="checkbox" name="bulb" value = "CFL">Compact Fluorescent Light</label>
+
+<div id="output"></div>
+

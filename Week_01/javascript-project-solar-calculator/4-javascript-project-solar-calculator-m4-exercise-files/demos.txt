@@ -1,0 +1,115 @@
+var elem = document.getElementById('chooseMe');
+var fortuneNumber = elem.options[elem.selectedIndex].value;
+var fortuneNumber = elem.options[elem.selectedIndex].text;
+document.getElementById('feedback').innerHTML = fortuneResult;
+
+<button onclick="myFunction()">Tell my fortune</button>
+<div id="feedback"></div>
+
+
+
+// JavaScript code for the day of the week
+
+switch (Number(dateShort)) {
+	case 1:
+        dayName = "Sunday";
+        break;
+    case 2:
+        dayName = "Monday";
+        break;
+    case 3:
+        dayName = "Tuesday";
+        break;
+    case 4:
+        dayName = "Wednesday";
+        break;
+    case 5:
+        dayName = "Thursday";
+        break;
+    case 6:
+        dayName = "Friday";
+        break;
+    case 7:
+        dayName = "Saturday";
+        break;
+    default:
+    	dayName= "Out of Range";
+} // end of switch
+	
+	
+	
+	
+switch (dateShort) {
+	case "U":
+        dayName = "Sunday";
+        break;
+    case "M":
+        dayName = "Monday";
+        break;
+    case "T":
+        dayName = "Tuesday";
+        break;
+    case "W":
+        dayName = "Wednesday";
+        break;
+    case "R":
+        dayName = "Thursday";
+        break;
+    case "F":
+        dayName = "Friday";
+        break;
+    case "S":
+        dayName = "Saturday";
+        break;
+    default:
+    	dayName= "Out of Range";
+} // end of switch
+	
+	
+<!-- HTML for the day of the week -->
+<select id="chooseMe">
+<option value="U">1</option>
+<option value="M">2</option>
+<option value="T">3</option>
+<option value="W">4</option>
+<option value="R">5</option>
+<option value="F">6</option>
+<option value="S">7</option>
+</select>
+
+
+
+// Fortune Teller Switch
+switch (Number(fortuneNum)) {
+	case 1:
+	case 6:
+        fortuneMessage = "You will inherit a fortune.";
+        break;
+    case 2:
+	case 7:
+        fortuneMessage = "You will become a JavaScript Ninja";
+        break;
+    case 3:
+        fortuneMessage = "You will win a new car.";
+        break;
+    case 4:
+    case 8:
+        fortuneMessage = "A new computer will arrive at your house today.";
+        break;
+    
+    default:
+    	fortuneMessage= "You have three hours to live so finish this course.";
+} // end of switch
+
+<select id="chooseMe">
+<option value=1>Fortune 1</option>
+<option value=2>Fortune 2</option>
+<option value=3>Fortune 3</option>
+<option value=4>Fortune 4</option>
+<option value=5>Fortune 5</option>
+<option value=6>Fortune 6</option>
+<option value=7>Fortune 7</option>
+<option value=8>Fortune 8</option>
+<option value=9>Fortune 9</option>
+<option value=10>Fortune 10</option>
+</select>
