@@ -1,0 +1,11 @@
+{
+  "name": "creatinghtmlformshost",
+  "description": "Simple NodeJS host for Creating HTML Forms pluralsight course",
+  "author": "Matt Milner",
+  "devDependencies": {
+    "browser-sync": "~2.26.7"
+  },
+  "scripts": {
+    "dev": "browser-sync start --server --files *.html,*.css"
+  }
+}
