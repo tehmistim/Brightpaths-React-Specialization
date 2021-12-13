@@ -1,0 +1,37 @@
+{
+  "name": "javascript-oo-shopping-game",
+  "version": "1.0.0",
+  "description": "Build a Shopping Game with Object Oriented Javascript - https://pluralsight.com",
+  "main": "shoppinggame.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cross-env": "^7.0.2",
+    "esprima": "^4.0.1",
+    "mocha": "^6.2.0",
+    "readline": "^1.3.0",
+    "unit.js": "^2.1.1"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha './test/*.test.js' || true || exit 0",
+    "test:module1": "cross-env NODE_ENV=test mocha './test/module1.test.js' || true || exit 0",
+    "test:module2": "cross-env NODE_ENV=test mocha './test/module2.test.js' || true || exit 0",
+    "test:module3": "cross-env NODE_ENV=test mocha './test/module3.test.js' || true || exit 0",
+    "test:module4": "cross-env NODE_ENV=test mocha './test/module4.test.js' || true || exit 0",
+    "test:module5": "cross-env NODE_ENV=test mocha './test/module5.test.js' || true || exit 0",
+    "test:module6": "cross-env NODE_ENV=test mocha './test/module6.test.js' || true || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pluralsight-projects/javascript-oo-shopping-game.git"
+  },
+  "keywords": [],
+  "author": "Buddhini Samarakkody",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pluralsight-projects/javascript-oo-shopping-game/issues"
+  },
+  "homepage": "https://github.com/pluralsight-projects/javascript-oo-shopping-game#readme"
+}
