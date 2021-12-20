@@ -1,0 +1,19 @@
+.title-block .title {
+    display: inline-block;
+    padding: 30px 60px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    border: 2px solid #ff4500;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  .title-block .subtitle {
+    display: inline-block;
+    color: #555;
+    font-weight: normal;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ff4500;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }

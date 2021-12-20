@@ -6,3 +6,7 @@
     margin: 20px auto;
     border-radius: 4px;
 }
+
+.card button {
+    background-color: rgb(149, 143, 255)
+}

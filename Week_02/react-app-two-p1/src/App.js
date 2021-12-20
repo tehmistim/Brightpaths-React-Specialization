@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Title from './components/Title';
 import Modal from './components/Modal';
 import EventList from './components/EventList';
+import NewEventForm from './components/NewEventForm';
 
 
 function App() {
@@ -57,18 +58,18 @@ function App() {
                 <p>The dark-side,</p>
                 <p>and the Light.</p>
        </Modal>  */}
-       {showModal && <Modal handleClose={ handleClose } isWarningModal={ true }>
-            <h2>S T O P !</h2>
-                <p>Think before you exit</p>
-                <p>Check your canisters</p>
-                <p>and have fun</p>
+       {showModal && <Modal handleClose={ handleClose } isWarningModal={ false }>
+        <NewEventForm />
        </Modal>}
        <br />
        <br />
        <br />
 
        <div>
+         <button onClick={() => setShowModal(true)}>Add Event</button>
+         <br />
          <button onClick={() => setShowModal(true)}>Modal</button>
+
        </div>
 
     </div>
