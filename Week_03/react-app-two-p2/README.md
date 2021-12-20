@@ -20,4 +20,8 @@ Ability to hide all events in the list
 Ability to delete events
 
 ![04](https://user-images.githubusercontent.com/92332173/146826148-9ae422ac-4787-48a9-99e1-e5df76681cd2.jpg)
-Ability to have popup modals
+Ability to have popup screens to input data
+
+![05](https://user-images.githubusercontent.com/92332173/146833945-5966e489-d039-4a35-9f13-4f5b8943c240.jpg)
+
+AND IT's DONE!
