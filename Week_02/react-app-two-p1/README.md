@@ -9,3 +9,5 @@ Still practicing with react.
 - Fetching Data/useEffect
 - Learning CSS Modules
 - Learning Dynamic CSS Styles
+
+# This app is not complete and continues on into Week_03

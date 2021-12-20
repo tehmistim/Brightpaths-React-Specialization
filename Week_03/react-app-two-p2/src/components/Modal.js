@@ -2,7 +2,7 @@ import React from 'react';
 import './modal.css';
 import ReactDOM from 'react-dom';
 
-export default function Modal({ children, handleClose, isWarningModal }) {
+export default function Modal({ children, isWarningModal }) {
     return ReactDOM.createPortal((
         <div className="modal-backdrop">
             <div className="modal" style={{
@@ -11,10 +11,10 @@ export default function Modal({ children, handleClose, isWarningModal }) {
                 textAlign: "center"
             }}> 
                 {children}
-                <button 
+                {/* <button 
                 onClick={handleClose} 
                 className={isWarningModal ? "warning-btn" : ""}
-                >close</button>
+                >close</button> */}
             </div>
         </div>
     ), document.body)

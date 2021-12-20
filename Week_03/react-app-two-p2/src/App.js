@@ -10,13 +10,16 @@ import NewEventForm from './components/NewEventForm';
 function App() {
   const [showModal, setShowModal] = useState(false)
   const [showEvents, setShowEvents] = useState(true)
-  const [events, setEvents] = useState([
-    {title: " Peter's birthday bash", id:1},
-    {title: "Panda has a live stream", id:2},
-    {title: "Pauls can't keep still party", id:3}
-  ])
+  const [events, setEvents] = useState([])
 
-  console.log(showModal)
+  const addEvent = (event) => {
+    setEvents((prevEvents) => {
+      return [...prevEvents, event]
+    })
+    //takes the current events, spreads them into the new array of events
+    setShowModal(false)
+
+  }
 
   const handleClick = (id) => {
     
@@ -28,9 +31,9 @@ function App() {
     console.log(id)
   }
 
-  const handleClose = () => {
-    setShowModal(false)
-  }
+  // const handleClose = () => {
+  //   setShowModal(false)
+  // }
 
   const subtitle = "Happening now!"
 
@@ -58,8 +61,8 @@ function App() {
                 <p>The dark-side,</p>
                 <p>and the Light.</p>
        </Modal>  */}
-       {showModal && <Modal handleClose={ handleClose } isWarningModal={ false }>
-        <NewEventForm />
+       {showModal && <Modal isWarningModal={ false }>
+        <NewEventForm addEvent={addEvent} />
        </Modal>}
        <br />
        <br />
