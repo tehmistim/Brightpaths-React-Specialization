@@ -19,6 +19,7 @@
 .env.production.local
 
 /Week_02
+/Week_03/tripago/README.md
 
 npm-debug.log*
 yarn-debug.log*
